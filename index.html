@@ -57,6 +57,36 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103280425760120");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v14.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="card" data-state="#about">
        <div class="card-header">
            <div class="card-cover" style="background-image: url(img/boy.jfif);"></div>
@@ -75,7 +105,7 @@
                    <a href="https://www.facebook.com/kavidu.dilhara.0"><img src="https://raw.githubusercontent.com/kavidu-dilhara/Project-Sources/main/website/facebook%20logo.png" alt="Facebook"></a>
                    <a href="https://github.com/kavidu-dilhara"><img src="https://raw.githubusercontent.com/kavidu-dilhara/Project-Sources/main/website/github.png" alt="Twitter"></a>
                    <a href="https://wa.me/qr/6YU2FJRVFLGAM1"><img src="https://raw.githubusercontent.com/kavidu-dilhara/Project-Sources/main/website/whatsapp.png" alt="Insta"></a>
-                   <a href="https://g.dev/kavindudilhara"><img src="https://raw.githubusercontent.com/kavidu-dilhara/Project-Sources/main/website/linkedin.png" alt="Linkedin"></a>
+                   <a href="https://www.linkedin.com/in/kavidu-dilhara"><img src="https://raw.githubusercontent.com/kavidu-dilhara/Project-Sources/main/website/linkedin.png" alt="Linkedin"></a>
                </div>
            </div>
            <!-- end  in about section -->
