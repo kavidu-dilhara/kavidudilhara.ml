@@ -50,6 +50,23 @@ body {
   top: 40px;
   transition: all 1s;
 }
+.wrapper-no7 .restart {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  border: #bbbbbb 1px solid;
+  box-shadow: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+.wrapper-no7 .restart:hover {
+  background-color: #ddd;
+}
+.wrapper-no7 .restart.visible {
+  display: block;
+}
 .wrapper-no7 .layout {
   display: block;
   opacity: 1;
