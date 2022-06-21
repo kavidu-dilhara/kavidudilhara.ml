@@ -285,7 +285,7 @@ transform: translateX(-50%) translateY(-64px);
   transition: 0.3s;
   padding-right: 12px;
 }
-.contact-me {
+.myblog {
   border: 0;
   outline: none;
   background: linear-gradient(to right, rgba(83,200,239,0.8) 0%, rgba(81,106,204,0.8) 96%);
