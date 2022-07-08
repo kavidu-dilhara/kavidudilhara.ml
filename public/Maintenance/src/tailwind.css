@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* .image1{
+    animation: moveY 2s infinite;
+} */
+.image2{
+    position: absolute;
+    top: -110px;
+    left: -400px;
+    width: 20%;
+    opacity: 0.50;
+}
+
+.image3{
+    position: absolute;
+    top: 0px;
+    right: 200px;
+    width: 50%;
+    opacity: 0.30;
+    z-index: -99;
+}
+
+/* 
+@keyframes moveY {
+    0% { transform: translateY(0px)}
+    50% { transform: translateY(25px)}
+    100% { transform: translateY(0px)}
+} */

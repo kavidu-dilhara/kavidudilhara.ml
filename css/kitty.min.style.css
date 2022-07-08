@@ -1,0 +1,181 @@
+/*!
+ * VERSION: 1.0.3
+ * DATE: 2022-07-01
+ * UPDATES AND DOCS AT: https://github.com/kavidu-dilhara/kavidudilhara.ml
+ * @license Copyright (c) 2020-2022, All rights reserved.
+ * 
+ * @author: Kavidu Dilhara, support@kavindudilhara.tk
+ **/
+body {
+  height: 100vh;
+  font-family: "Delius Swash Caps", cursive;
+  text-align: center;
+  color: #004466;
+  background: #E4E5E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper-no7 {
+  display: flex;
+  justify-content: center;
+}
+.wrapper-no7 .animation-wrapper {
+  display: flex;
+}
+.wrapper-no7 .animation-wrapper.notvisible {
+  display: none;
+}
+.wrapper-no7 .cat {
+  width: 80%;
+  overflow: visible;
+}
+.wrapper-no7 .cat-wrapper {
+  width: 300px;
+}
+.wrapper-no7 .eyes circle {
+  fill: #fff;
+}
+.wrapper-no7 .frontlegs,
+.wrapper-no7 .backlegs {
+  opacity: 1;
+}
+.wrapper-no7 .logoani {
+  align-self: flex-end;
+  margin-left: -25px;
+  font-size: 45px;
+}
+.wrapper-no7 .logo {
+  font-size: 55px;
+  opacity: 0;
+  position: absolute;
+  top: -40px;
+}
+.wrapper-no7 .logo.visible {
+  opacity: 1;
+  top: 40px;
+  transition: all 1s;
+}
+.wrapper-no7 .restart {
+  display: none;
+  font-size: 20px;
+  position: absolute;
+  top: 150%;
+  background-color: white;
+  border: #bbbbbb 1px solid;
+  box-shadow: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+.wrapper-no7 .restart:hover {
+  background-color: #ddd;
+}
+.wrapper-no7 .restart.visible {
+  display: block;
+}
+.wrapper-no7 .layout {
+  display: block;
+  opacity: 1;
+  width: 80%;
+  position: absolute;
+  top: 40px;
+  transition: opacity 1s;
+}
+.wrapper-no7 .layout.notvisible {
+  display: none;
+  opacity: 0;
+}
+.wrapper-no7 .layout li {
+  height: 15px;
+  background-color: #bbbbbb;
+}
+.wrapper-no7 .layout ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.wrapper-no7 .layout li {
+  width: 50px;
+  margin-left: 20px;
+  list-style: none;
+  background-color: #bbbbbb;
+}
+.wrapper-no7 .layout .layout__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-no7 .layout .layout__nav-left,
+.wrapper-no7 .layout .layout__nav-right {
+  width: 40%;
+}
+.wrapper-no7 .layout .layout__nav-left li:first-child {
+  margin-left: 0;
+}
+.wrapper-no7 .layout .layout__nav-right {
+  flex-direction: row-reverse;
+}
+.wrapper-no7 .layout .layout__title {
+  width: 80%;
+  height: 40px;
+  background-color: #bbbbbb;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper-no7 .layout .layout__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper-no7 .layout .layout__content div {
+  width: 80%;
+  height: 20px;
+  background-color: #bbbbbb;
+  margin-top: 20px;
+}
+.wrapper-no7 .layout .layout__content div:first-child {
+  margin-top: 100px;
+}
+@media screen and (max-width: 500px) {
+  .wrapper-no7 .layout {
+    width: 100%;
+  }
+  .wrapper-no7 .layout .layout__nav,
+.wrapper-no7 .layout .layout__nav-left,
+.wrapper-no7 .layout .layout__nav-right {
+    display: none;
+  }
+  .wrapper-no7 .layout .layout__title {
+    margin-top: 100px;
+  }
+  .wrapper-no7 .layout .layout__content div:first-child {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper-no7 .layout {
+    width: 100%;
+  }
+  .wrapper-no7 .layout .layout__title {
+    margin-top: 100px;
+  }
+  .wrapper-no7 .layout .layout__content div:first-child {
+    margin-top: 40px;
+  }
+  .wrapper-no7 .layout .layout__title {
+    margin-top: 70px;
+  }
+  .wrapper-no7 .layout .layout__nav {
+    margin-top: 20px;
+  }
+  .wrapper-no7 .layout .layout__nav-left,
+.wrapper-no7 .layout .layout__nav-right {
+    width: 35%;
+  }
+  .wrapper-no7 .logo {
+    font-size: 45px;
+  }
+}
